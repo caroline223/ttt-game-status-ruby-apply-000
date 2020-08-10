@@ -35,3 +35,10 @@ def won?(board)
 def full?(board)
   board.all? {|letter| letter == "X" || letter == "O"}
 end
+
+def draw?(board)
+  if (!won && full) || (!won && !full)
+    return true 
+  else
+    false 
+end
