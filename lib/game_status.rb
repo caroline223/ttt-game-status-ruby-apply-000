@@ -32,3 +32,6 @@ def won?(board)
     return false
   end
     
+def full?(board)
+  board.all? {|letter| letter == "X" || letter == "O"}
+end
