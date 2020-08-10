@@ -53,7 +53,7 @@ end
 end
 
 def winner?(board)
-  if won?(board)
+  if won?(board) && !full?(board) && !draw?(board)
     return true 
   else 
     return false 
