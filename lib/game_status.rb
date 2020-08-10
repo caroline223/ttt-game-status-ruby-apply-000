@@ -16,9 +16,9 @@ WIN_COMBINATIONS = [
   ]
 def won?(board)
   WIN_COMBINATIONS.each {|winning_set|
-  index_0 = i[0]
-  index_1 = i[1]
-  index_2 = i[2]
+  index_0 = winning_set[0]
+  index_1 = winning_wet[1]
+  index_2 = winning_set[2]
   
   
   position_1 = board[index_0]
