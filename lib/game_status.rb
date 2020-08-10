@@ -14,3 +14,18 @@ WIN_COMBINATIONS = [
   [0,3,6],
   [2,5,8]
   ]
+won do
+  for each WIN_COMBINATIONS
+  in WIN_COMBINATIONS
+  win_index_1 = 
+  win_combination [0]
+  
+  position_1 = board[win_index_1]
+  
+  if (position_1 == "X" && position_2 == "X" && position_3 == "X") || 
+    return win_combination 
+  else
+    false 
+end
+end
+end
