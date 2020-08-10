@@ -53,9 +53,17 @@ end
 end
 
 def winner?(board)
-  if won?(board) && !full?(board) && !draw?(board)
-    return true 
-  else 
-    return false 
+  letter = []
+  letter = won?(board)
+  if
+    letter == false
+    return nil 
+  else
+    if
+      board[letter[0]] == "X"
+      return "X" 
+    else
+      return "O"
+    end
   end
 end 
