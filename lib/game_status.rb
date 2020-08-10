@@ -53,14 +53,14 @@ end
 end
 
 def winner?(board)
-  letter = []
-  letter = won?(board)
+  index = []
+  index = won?(board)
   if
-    letter == false
+    index == false
     return nil 
   else
     if
-      board[letter[0]] == "X"
+      board[index[0]] == "X"
       return "X" 
     else
       return "O"
