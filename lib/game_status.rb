@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,5,8]
   ]
 def won?(board)
-  WIN_COMBINATIONS.each {|i|
+  WIN_COMBINATIONS.each {|winning_set|
   index_0 = i[0]
   index_1 = i[1]
   index_2 = i[2]
@@ -26,7 +26,7 @@ def won?(board)
   position_3 = board[index_2]
   
   if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
-    return i 
+    return winning_set  
   end
   }
     return false
